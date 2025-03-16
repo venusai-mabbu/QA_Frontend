@@ -9,7 +9,7 @@ const FAQAccordion = ({ title}) => {
   useEffect(() => {
     const fetchFAQs = async () => {
       try {
-        const response = await fetch(`https://faqs-git-main-venusais-projects-15ab873f.vercel.appapi/faqs${title}`);
+        const response = await fetch(`https://faqs-three.vercel.app/api/faqs/${title}`);
         if (!response.ok) {
           throw new Error("Failed to fetch FAQs");
         }
