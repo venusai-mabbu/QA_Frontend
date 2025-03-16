@@ -30,7 +30,7 @@ const FAQAccordion = ({ title}) => {
   return (
     <div>
       <Typography variant="h5" align="center" gutterBottom>{title}</Typography>
-      {faqs.map((faq, index) => (
+      {faqs.length==0?"No posts to show":faqs.map((faq, index) => (
         <Accordion key={index}>
           <AccordionSummary expandIcon={<ExpandMoreIcon />}>
             <Typography variant="h6">{faq.question}</Typography>
