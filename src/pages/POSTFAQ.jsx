@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './POSTFAQ.css'
 
 const POSTFAQ = () => {
+    const [section, setSection] = useState("");
+
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
 
