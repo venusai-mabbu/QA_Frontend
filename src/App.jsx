@@ -3,15 +3,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Container, Typography, Button, Stack } from "@mui/material";
 import Home from "./pages/Home";
-import JavaFAQ from "./pages/JavaFAQ";
-import DBMSFAQ from "./pages/DBMSFAQ";
-import OSFAQ from "./pages/OSFAQ";
-import ComputerNetworksFAQ from "./pages/ComputerNetworksFAQ";
-import JSTypescriptFAQ from "./pages/JSTypescriptFAQ";
-import ReactFAQ from "./pages/ReactFAQ";
-import APIFAQ from "./pages/APIFAQ";
-import AWSCloudFAQ from "./pages/AWSCloudFAQ";
-import DockerFAQ from "./pages/DockerFAQ";
+import FAQPage from "./pages/FAQPage";
 import POSTFAQ from "./pages/POSTFAQ"
 
 const App = () => {
@@ -61,19 +53,19 @@ const App = () => {
 
         {/* Routes */}
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/java" element={<JavaFAQ />} />
-          <Route path="/dbms" element={<DBMSFAQ />} />
-          <Route path="/os" element={<OSFAQ />} />
-          <Route path="/cn" element={<ComputerNetworksFAQ />} />
-          <Route path="/js" element={<JSTypescriptFAQ />} />
-          <Route path="/react" element={<ReactFAQ />} />
-          <Route path="/api" element={<APIFAQ />} />
-          <Route path="/aws" element={<AWSCloudFAQ />} />
-          <Route path="/docker" element={<DockerFAQ />} />
-          <Route path="/post" element={<POSTFAQ />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/java" element={<FAQPage title="java" />} />
+      <Route path="/dbms" element={<FAQPage title="dbms" />} />
+      <Route path="/os" element={<FAQPage title="os" />} />
+      <Route path="/cn" element={<FAQPage title="cn" />} />
+      <Route path="/js" element={<FAQPage title="js" />} />
+      <Route path="/react" element={<FAQPage title="react" />} />
+      <Route path="/api" element={<FAQPage title="api" />} />
+      <Route path="/aws" element={<FAQPage title="aws" />} />
+      <Route path="/docker" element={<FAQPage title="docker" />} />
+      <Route path="/post" element={<POSTFAQ />} />
 
-        </Routes>
+</Routes>
       </Container>
     </Router>
   );

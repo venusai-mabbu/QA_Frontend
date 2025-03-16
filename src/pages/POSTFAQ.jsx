@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import './POSTFAQ.css'
 
 const POSTFAQ = () => {
+  const [section, setSection] = useState("");
+
   const [question, setQuestion] = useState("");
   const [answer, setAnswer] = useState("");
 
@@ -50,7 +52,7 @@ const POSTFAQ = () => {
 
           <option value="api">API</option>
           <option value="aws">AWS</option>
-          <option value="aws">Docker</option>
+          <option value="docker">Docker</option>
 
         </select>
 
