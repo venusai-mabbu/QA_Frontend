@@ -14,7 +14,7 @@ const POSTFAQ = () => {
 
     const faqData = { "section":section, "question":question, "answer":answer };
     try {
-      const response = await fetch("https://faqs-git-main-venusais-projects-15ab873f.vercel.appapi/faqs", {
+      const response = await fetch("https://faqs-three.vercel.app/api/faqs/faqs", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(faqData),
